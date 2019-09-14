@@ -1,0 +1,21 @@
+
+Oauth client:
+------------
+# Here is your client ID
+1071534795399-9q9urdlq845cu060e7isa56usjsdnu3o.apps.googleusercontent.com
+
+# Here is your client secret
+acKPO8mB9yM_yEW2hN80Dr_x
+
+
+
+
+web-application
+# Here is your client ID
+1071534795399-82mb82i1uacrd5v0rludik5guvhldhli.apps.googleusercontent.com
+# Here is your client secret
+EPu7TP3nKWquQUx7FJuTbmqr
+
+
+
+

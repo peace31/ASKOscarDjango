@@ -1,0 +1,69 @@
+{% extends 'taskoftheday/base.html' %}
+{% block title %}Ask Oskar | Progress{% endblock %}
+{% block menu_taskoftheday_active %}nav-item{% endblock %}
+{% block menu_progress_active %}active{% endblock %}
+{% block menu_analytics_active %}nav-item{% endblock %}
+{% block menu_goals_active %}nav-item{% endblock %}
+
+{% block body %}
+<select class="btn btn-primary selectpicker show-menu-arrow" id='chartprogress'>
+    <option class="dropdown-item" value="revenue-opt" selected>Revenue</option>
+    <option class="dropdown-item" value="rpu-opt">Revenue per user</option>
+    <option class="dropdown-item" value="aov-opt">Average order value</option>
+    <option class="dropdown-item" value="cr-opt">Conversion rate</option>
+    <option class="dropdown-item" value="br-opt">Bounce rate</option>
+    <option class="dropdown-item" value="scar-opt">Shopping cart abandonment rate</option>
+    <option class="dropdown-item" value="traffic-opt">Visitors</option>
+</select>
+
+
+<div class="card2 full-chart-topmargin" id='revenue'>
+    <div class="card-block">
+        <div class="chart-wrapper fullsize">
+            <canvas id="revenue-chart" class="chart-size-progress"></canvas>
+        </div>
+    </div>
+</div>
+<div style="display:none;" class="card2 full-chart-topmargin" id='rpu'>
+    <div class="card-block">
+        <div class="chart-wrapper fullsize">
+            <canvas id="rpu-chart" class="chart-size-progress"></canvas>
+        </div>
+    </div>
+</div>
+<div style="display:none;" class="card2 full-chart-topmargin" id='aov'>
+    <div class="card-block">
+        <div class="chart-wrapper fullsize">
+            <canvas id="aov-chart" class="chart-size-progress"></canvas>
+        </div>
+    </div>
+</div>
+<div style="display:none;" class="card2 full-chart-topmargin" id='cr'>
+    <div class="card-block">
+        <div class="chart-wrapper fullsize">
+            <canvas id="cr-chart" class="chart-size-progress"></canvas>
+        </div>
+    </div>
+</div>
+<div style="display:none;" class="card2 full-chart-topmargin" id='br'>
+    <div class="card-block">
+        <div class="chart-wrapper fullsize">
+            <canvas id="br-chart" class="chart-size-progress"></canvas>
+        </div>
+    </div>
+</div>
+<div style="display:none;" class="card2 full-chart-topmargin" id='scar'>
+    <div class="card-block">
+        <div class="chart-wrapper fullsize">
+            <canvas id="scar-chart" class="chart-size-progress"></canvas>
+        </div>
+    </div>
+</div>
+<div style="display:none;" class="card2 full-chart-topmargin" id='traffic'>
+    <div class="card-block">
+        <div class="chart-wrapper fullsize">
+            <canvas id="traffic-chart" class="chart-size-progress"></canvas>
+        </div>
+    </div>
+</div>
+{% endblock %}

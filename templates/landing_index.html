@@ -1,0 +1,275 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="2XPWAEILw_06b21YcpBv1B4BHgc5pWakbhFm-_VH5mw"/>
+    <title>Ask Oskar | Launching Soon</title>
+    {% load staticfiles %}
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="{% static 'css/flexslider.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/line-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/elegant-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/lightbox.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/theme-rocklobster.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <!--[if gte IE 9]>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ie9.css' %}"/>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700'
+          rel='stylesheet' type='text/css'>
+    <script src="{% static 'js/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+</head>
+<body>
+<div class="loader">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>
+
+<div class="nav-container">
+    <nav class="top-bar overlay-bar">
+        <div class="container">
+
+            <!--end of row-->
+
+
+            <div class="row nav-menu">
+                <div class="col-sm-3 col-md-2 columns">
+                    <a href="index.html">
+                        <img class="logo logo-light" alt="Logo" src="{% static 'img/Ask-Oskar-Logo.png' %}">
+                        <img class="logo logo-dark" alt="Logo" src="{% static 'img/Ask-Oskar-Logo.png' %}">
+                    </a>
+                </div>
+
+
+                <ul class="social-icons text-right">
+                    <li>
+                        <a href="http://www.facebook.com/AskOskarOfficial">
+                            <i class="icon social_facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="registration/login/">
+                            <i class="glyphicon glyphicon-search"> Login</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--end of row-->
+
+        <div class="mobile-toggle">
+            <i class="icon icon_menu"></i>
+        </div>
+
+</div><!--end of container-->
+</nav>
+
+
+</div>
+
+<div class="main-container" id="getaccess">
+    <header class="signup">
+        <div class="background-image-holder parallax-background">
+            <img class="background-image" alt="Background Image" src="{% static 'img/scalybanner-1.jpg' %}">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
+                    <h1 class="text-white">We're getting ready to launch.<br>Take your eCommerce to a whole new
+                        dimension..</h1>
+                </div>
+            </div><!--end of row-->
+
+            <div class="row text-center">
+
+                <div class="col-sm-12 text-center">
+                    <div class="photo-form-wrapper clearfix">
+                        <form class="mail-list-signup" id="sb-form" method="post" action="subscribe/">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-4 col-md-offset-3 col-sm-offset-2">
+                                    <input class="signup-name-field validate-required" name="name" type="text" id="name"
+                                           placeholder="Your Name">
+                                </div>
+
+                                <div class="col-md-3 col-sm-4">
+                                    <input class="signup-email-field validate-required validate-email" type="email"
+                                           name="email" id="email" placeholder="Your Email Address">
+                                </div>
+
+                                <div class="col-md-12 col-md-offset-0 col-sm-4 col-sm-offset-4 text-center">
+                                    <input type="submit" class="btn btn-primary btn-filled" value="Subscribe">
+                                </div>
+                            </div><!--end of row-->
+                        </form>
+                    </div><!--end of photo form wrapper-->
+
+                    <span class="text-white">We <strong>never</strong> share emails with third parties</span>
+                    <div class="text-white" style="color:red;"><b>{{ message }}</b></div>
+                </div>
+
+            </div><!--end of row-->
+            <iframe class="mail-list-form"
+                    srcdoc="<!-- Begin MailChimp Signup Form --> <link href=&quot;//cdn-images.mailchimp.com/embedcode/classic-081711.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;> <style type=&quot;text/css&quot;> 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block. 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id=&quot;mc_embed_signup&quot;> <form action=&quot;//askoskar.us16.list-manage.com/subscribe/post?u=54b1ca1b3d8448c4cfd6d428e&amp;id=a9d94e8fe9&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate> 	<h2>Subscribe to our mailing list</h2> <div class=&quot;indicates-required&quot;><span class=&quot;asterisk&quot;>*</span> indicates required</div> <div class=&quot;mc-field-group&quot;> 	<label for=&quot;mce-EMAIL&quot;>Email Address  <span class=&quot;asterisk&quot;>*</span> </label> 	<input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;> </div> <div class=&quot;mc-field-group&quot;> 	<label for=&quot;mce-FNAME&quot;>First Name </label> 	<input type=&quot;text&quot; value=&quot;&quot; name=&quot;FNAME&quot; class=&quot;&quot; id=&quot;mce-FNAME&quot;> </div> <div class=&quot;mc-field-group&quot;> 	<label for=&quot;mce-LNAME&quot;>Last Name </label> 	<input type=&quot;text&quot; value=&quot;&quot; name=&quot;LNAME&quot; class=&quot;&quot; id=&quot;mce-LNAME&quot;> </div> 	<div id=&quot;mce-responses&quot; class=&quot;clear&quot;> 		<div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;></div> 		<div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;></div> 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style=&quot;position: absolute; left: -5000px;&quot;><input type=&quot;text&quot; name=&quot;b_77142ece814d3cff52058a51f_2810699d9e&quot; tabindex=&quot;-1&quot; value=&quot;&quot;></div>     <div class=&quot;clear&quot;><input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;></div> </form> </div> <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->">
+            </iframe>
+
+        </div><!--end of container-->
+    </header>
+
+
+    <section class="feature-divider">
+
+        <div class="background-image-holder" data-scroll-reveal="wait 0.2s then enter 200px from bottom over 0.3s">
+            <img class="background-image" alt="Background Image" src="{% static 'img/grey-bg.jpg' %}">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h1>The only help you need<br>to grow your eCommerce store.</h1>
+                    <p class="lead">
+                        We analyse your store to give you the most relevant step-by-step instructions every day to grow
+                        your profits. If you have ever felt stuck about what to put on your todo list. Then your life
+                        will get a lot easier...
+                    </p>
+                </div>
+
+                <div class="col-sm-7" data-scroll-reveal="enter from bottom and move 100px">
+                    <img alt="App Screenshot" src="{% static 'img/dashboard-mac.png' %}">
+                </div>
+            </div><!--end of row-->
+        </div>
+    </section>
+
+    <section class="feature-divider">
+
+        <div class="background-image-holder" data-scroll-reveal="wait 0.2s then enter 200px from bottom over 0.3s">
+            <img class="background-image" alt="Background Image" src="{% static 'img/grey-bg.jpg' %}">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7" data-scroll-reveal="enter from bottom and move 100px">
+                    <img alt="App Screenshot" src="{% static 'img/TaskofTheDay-iPad.png' %}">
+                </div>
+                <div class="col-sm-5">
+                    <h1>Task of the day.<br>Tailored for your needs.</h1>
+                    <p class="lead">
+                        Every store is unique and need to improve different things. Your task of the day will be
+                        relevant to what you should improve. To find what is relevant for you, we will use the data from
+                        google analytics and shopify. Numbers don't lie. This way you will get a relevant task.
+                    </p>
+                </div>
+
+
+            </div><!--end of row-->
+        </div>
+    </section>
+
+
+    <section class="feature-divider">
+
+        <div class="background-image-holder" data-scroll-reveal="wait 0.2s then enter 200px from bottom over 0.3s">
+            <img class="background-image" alt="Background Image" src="{% static 'img/grey-bg.jpg' %}">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h1>Progress<br>Learn why and how.</h1>
+                    <p class="lead">
+                        Follow your progress in an easy to use graph. You can choose what period of time and also
+                        different options like profit, conversion rate and many more.
+                        You can easy see the events that happend by clicking on the dots in the graph. Each dot
+                        represents a "task of the day" you have completed.
+                        Learn from the task you have done in the past to keep improving your store. Each task you do
+                        will make you a better eCommerce entrepreneur.
+                    </p>
+                </div>
+
+                <div class="col-sm-7" data-scroll-reveal="enter from bottom and move 100px">
+                    <img alt="App Screenshot" src="{% static 'img/progress.jpg' %}">
+                </div>
+            </div><!--end of row-->
+        </div>
+    </section>
+
+
+    <header class="page-header">
+        <div class="background-image-holder parallax-background">
+            <img class="background-image" alt="Background Image" src="{% static 'img/hero12.jpg' %}">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-sm-12">
+                    <span class="text-white alt-font">A great bonus</span>
+                    <h1 class="text-white">Get access to our community</h1>
+                    <p class="text-white">
+                        We're building a dynamic product that is tailored to each customer's needs - that's why we have
+                        created a community.<br>
+                        You can share any concerns and challenges with us.<br>
+                        In return for your help, you will get free lifetime access to the community!<br><br>
+                        <a href="#getaccess">
+                            <button class="btn btn-primary btn-filled">Let's get started!</button>
+                        </a>
+                    </p>
+                </div>
+            </div><!--end of row-->
+        </div><!--end of container-->
+    </header>
+
+    <div class="footer-container">
+
+        <footer class="social bg-secondary-1">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1 class="text-white">Get In Touch</h1>
+                        <a href="mailto:hello@askoskar.com"
+                           class="text-white"><strong>hello@askoskar.com</strong></a><br>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="http://www.facebook.com/AskOskarOfficial">
+                                    <i class="icon social_facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <br>
+                        <span class="sub">© Copright 2017 <a href="#">Ask Oskar</a> - All Rights Reserved</span>
+                    </div>
+                </div><!--end of row-->
+            </div><!--end of container-->
+
+        </footer>
+    </div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.plugin.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+    <script src="{% static 'js/smooth-scroll.min.js' %}"></script>
+    <script src="{% static 'js/skrollr.min.js' %}"></script>
+    <script src="{% static 'js/spectragram.min.js' %}"></script>
+    <script src="{% static 'js/scrollReveal.min.js' %}"></script>
+    <script src="{% static 'js/isotope.min.js' %}"></script>
+    <script src="{% static 'js/twitterFetcher_v10_min.js' %}"></script>
+    <script src="{% static 'js/lightbox.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
+				

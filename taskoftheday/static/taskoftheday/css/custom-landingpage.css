@@ -1,0 +1,1131 @@
+.btn-lg, .btn-group-lg > .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.btn-email,
+.btn-facebook,
+.btn-twitter,
+.btn-linkedin,
+.btn-flickr,
+.btn-tumblr,
+.btn-xing,
+.btn-github,
+.btn-html5,
+.btn-openid,
+.btn-stack-overflow,
+.btn-youtube,
+.btn-css3,
+.btn-dribbble,
+.btn-google-plus,
+.btn-instagram,
+.btn-pinterest,
+.btn-vk,
+.btn-yahoo,
+.btn-behance,
+.btn-dropbox,
+.btn-reddit,
+.btn-spotify,
+.btn-vine,
+.btn-foursquare,
+.btn-vimeo {
+    position: relative;
+    overflow: hidden;
+    color: #fff !important;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border: 0;
+}
+
+.btn-email::before,
+.btn-facebook::before,
+.btn-twitter::before,
+.btn-linkedin::before,
+.btn-flickr::before,
+.btn-tumblr::before,
+.btn-xing::before,
+.btn-github::before,
+.btn-html5::before,
+.btn-openid::before,
+.btn-stack-overflow::before,
+.btn-youtube::before,
+.btn-css3::before,
+.btn-dribbble::before,
+.btn-google-plus::before,
+.btn-instagram::before,
+.btn-pinterest::before,
+.btn-vk::before,
+.btn-yahoo::before,
+.btn-behance::before,
+.btn-dropbox::before,
+.btn-reddit::before,
+.btn-spotify::before,
+.btn-vine::before,
+.btn-foursquare::before,
+.btn-vimeo::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-email:hover,
+.btn-facebook:hover,
+.btn-twitter:hover,
+.btn-linkedin:hover,
+.btn-flickr:hover,
+.btn-tumblr:hover,
+.btn-xing:hover,
+.btn-github:hover,
+.btn-html5:hover,
+.btn-openid:hover,
+.btn-stack-overflow:hover,
+.btn-youtube:hover,
+.btn-css3:hover,
+.btn-dribbble:hover,
+.btn-google-plus:hover,
+.btn-instagram:hover,
+.btn-pinterest:hover,
+.btn-vk:hover,
+.btn-yahoo:hover,
+.btn-behance:hover,
+.btn-dropbox:hover,
+.btn-reddit:hover,
+.btn-spotify:hover,
+.btn-vine:hover,
+.btn-foursquare:hover,
+.btn-vimeo:hover {
+    color: #fff;
+}
+
+.btn-email.icon span,
+.btn-facebook.icon span,
+.btn-twitter.icon span,
+.btn-linkedin.icon span,
+.btn-flickr.icon span,
+.btn-tumblr.icon span,
+.btn-xing.icon span,
+.btn-github.icon span,
+.btn-html5.icon span,
+.btn-openid.icon span,
+.btn-stack-overflow.icon span,
+.btn-youtube.icon span,
+.btn-css3.icon span,
+.btn-dribbble.icon span,
+.btn-google-plus.icon span,
+.btn-instagram.icon span,
+.btn-pinterest.icon span,
+.btn-vk.icon span,
+.btn-yahoo.icon span,
+.btn-behance.icon span,
+.btn-dropbox.icon span,
+.btn-reddit.icon span,
+.btn-spotify.icon span,
+.btn-vine.icon span,
+.btn-foursquare.icon span,
+.btn-vimeo.icon span {
+    display: none;
+}
+
+.btn-email.text::before,
+.btn-facebook.text::before,
+.btn-twitter.text::before,
+.btn-linkedin.text::before,
+.btn-flickr.text::before,
+.btn-tumblr.text::before,
+.btn-xing.text::before,
+.btn-github.text::before,
+.btn-html5.text::before,
+.btn-openid.text::before,
+.btn-stack-overflow.text::before,
+.btn-youtube.text::before,
+.btn-css3.text::before,
+.btn-dribbble.text::before,
+.btn-google-plus.text::before,
+.btn-instagram.text::before,
+.btn-pinterest.text::before,
+.btn-vk.text::before,
+.btn-yahoo.text::before,
+.btn-behance.text::before,
+.btn-dropbox.text::before,
+.btn-reddit.text::before,
+.btn-spotify.text::before,
+.btn-vine.text::before,
+.btn-foursquare.text::before,
+.btn-vimeo.text::before {
+    display: none;
+}
+
+.btn-email.text span,
+.btn-facebook.text span,
+.btn-twitter.text span,
+.btn-linkedin.text span,
+.btn-flickr.text span,
+.btn-tumblr.text span,
+.btn-xing.text span,
+.btn-github.text span,
+.btn-html5.text span,
+.btn-openid.text span,
+.btn-stack-overflow.text span,
+.btn-youtube.text span,
+.btn-css3.text span,
+.btn-dribbble.text span,
+.btn-google-plus.text span,
+.btn-instagram.text span,
+.btn-pinterest.text span,
+.btn-vk.text span,
+.btn-yahoo.text span,
+.btn-behance.text span,
+.btn-dropbox.text span,
+.btn-reddit.text span,
+.btn-spotify.text span,
+.btn-vine.text span,
+.btn-foursquare.text span,
+.btn-vimeo.text span {
+    margin-left: 0 !important;
+}
+
+.btn-email::before,
+.btn-facebook::before,
+.btn-twitter::before,
+.btn-linkedin::before,
+.btn-flickr::before,
+.btn-tumblr::before,
+.btn-xing::before,
+.btn-github::before,
+.btn-html5::before,
+.btn-openid::before,
+.btn-stack-overflow::before,
+.btn-youtube::before,
+.btn-css3::before,
+.btn-dribbble::before,
+.btn-google-plus::before,
+.btn-instagram::before,
+.btn-pinterest::before,
+.btn-vk::before,
+.btn-yahoo::before,
+.btn-behance::before,
+.btn-dropbox::before,
+.btn-reddit::before,
+.btn-spotify::before,
+.btn-vine::before,
+.btn-foursquare::before,
+.btn-vimeo::before {
+    width: 3.6rem;
+    height: 3.6rem;
+    padding: 0.5rem 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.btn-email span,
+.btn-facebook span,
+.btn-twitter span,
+.btn-linkedin span,
+.btn-flickr span,
+.btn-tumblr span,
+.btn-xing span,
+.btn-github span,
+.btn-html5 span,
+.btn-openid span,
+.btn-stack-overflow span,
+.btn-youtube span,
+.btn-css3 span,
+.btn-dribbble span,
+.btn-google-plus span,
+.btn-instagram span,
+.btn-pinterest span,
+.btn-vk span,
+.btn-yahoo span,
+.btn-behance span,
+.btn-dropbox span,
+.btn-reddit span,
+.btn-spotify span,
+.btn-vine span,
+.btn-foursquare span,
+.btn-vimeo span {
+    margin-left: 2.3125rem;
+}
+
+.btn-email.icon,
+.btn-facebook.icon,
+.btn-twitter.icon,
+.btn-linkedin.icon,
+.btn-flickr.icon,
+.btn-tumblr.icon,
+.btn-xing.icon,
+.btn-github.icon,
+.btn-html5.icon,
+.btn-openid.icon,
+.btn-stack-overflow.icon,
+.btn-youtube.icon,
+.btn-css3.icon,
+.btn-dribbble.icon,
+.btn-google-plus.icon,
+.btn-instagram.icon,
+.btn-pinterest.icon,
+.btn-vk.icon,
+.btn-yahoo.icon,
+.btn-behance.icon,
+.btn-dropbox.icon,
+.btn-reddit.icon,
+.btn-spotify.icon,
+.btn-vine.icon,
+.btn-foursquare.icon,
+.btn-vimeo.icon {
+    width: 2.3125rem;
+    height: 2.3125rem;
+}
+
+.btn-facebook.btn-lg, .btn-group-lg > .btn-facebook.btn,
+.btn-email.btn-lg,
+.btn-group-lg > .btn-email.btn,
+.btn-twitter.btn-lg,
+.btn-group-lg > .btn-twitter.btn,
+.btn-linkedin.btn-lg,
+.btn-group-lg > .btn-linkedin.btn,
+.btn-flickr.btn-lg,
+.btn-group-lg > .btn-flickr.btn,
+.btn-tumblr.btn-lg,
+.btn-group-lg > .btn-tumblr.btn,
+.btn-xing.btn-lg,
+.btn-group-lg > .btn-xing.btn,
+.btn-github.btn-lg,
+.btn-group-lg > .btn-github.btn,
+.btn-html5.btn-lg,
+.btn-group-lg > .btn-html5.btn,
+.btn-openid.btn-lg,
+.btn-group-lg > .btn-openid.btn,
+.btn-stack-overflow.btn-lg,
+.btn-group-lg > .btn-stack-overflow.btn,
+.btn-youtube.btn-lg,
+.btn-group-lg > .btn-youtube.btn,
+.btn-css3.btn-lg,
+.btn-group-lg > .btn-css3.btn,
+.btn-dribbble.btn-lg,
+.btn-group-lg > .btn-dribbble.btn,
+.btn-google-plus.btn-lg,
+.btn-group-lg > .btn-google-plus.btn,
+.btn-instagram.btn-lg,
+.btn-group-lg > .btn-instagram.btn,
+.btn-pinterest.btn-lg,
+.btn-group-lg > .btn-pinterest.btn,
+.btn-vk.btn-lg,
+.btn-group-lg > .btn-vk.btn,
+.btn-yahoo.btn-lg,
+.btn-group-lg > .btn-yahoo.btn,
+.btn-behance.btn-lg,
+.btn-group-lg > .btn-behance.btn,
+.btn-dropbox.btn-lg,
+.btn-group-lg > .btn-dropbox.btn,
+.btn-reddit.btn-lg,
+.btn-group-lg > .btn-reddit.btn,
+.btn-spotify.btn-lg,
+.btn-group-lg > .btn-spotify.btn,
+.btn-vine.btn-lg,
+.btn-group-lg > .btn-vine.btn,
+.btn-foursquare.btn-lg,
+.btn-group-lg > .btn-foursquare.btn,
+.btn-vimeo.btn-lg,
+.btn-group-lg > .btn-vimeo.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border: 0;
+}
+
+.btn-facebook.btn-lg::before, .btn-group-lg > .btn-facebook.btn::before,
+.btn-email.btn-lg::before,
+.btn-group-lg > .btn-email.btn::before,
+.btn-twitter.btn-lg::before,
+.btn-group-lg > .btn-twitter.btn::before,
+.btn-linkedin.btn-lg::before,
+.btn-group-lg > .btn-linkedin.btn::before,
+.btn-flickr.btn-lg::before,
+.btn-group-lg > .btn-flickr.btn::before,
+.btn-tumblr.btn-lg::before,
+.btn-group-lg > .btn-tumblr.btn::before,
+.btn-xing.btn-lg::before,
+.btn-group-lg > .btn-xing.btn::before,
+.btn-github.btn-lg::before,
+.btn-group-lg > .btn-github.btn::before,
+.btn-html5.btn-lg::before,
+.btn-group-lg > .btn-html5.btn::before,
+.btn-openid.btn-lg::before,
+.btn-group-lg > .btn-openid.btn::before,
+.btn-stack-overflow.btn-lg::before,
+.btn-group-lg > .btn-stack-overflow.btn::before,
+.btn-youtube.btn-lg::before,
+.btn-group-lg > .btn-youtube.btn::before,
+.btn-css3.btn-lg::before,
+.btn-group-lg > .btn-css3.btn::before,
+.btn-dribbble.btn-lg::before,
+.btn-group-lg > .btn-dribbble.btn::before,
+.btn-google-plus.btn-lg::before,
+.btn-group-lg > .btn-google-plus.btn::before,
+.btn-instagram.btn-lg::before,
+.btn-group-lg > .btn-instagram.btn::before,
+.btn-pinterest.btn-lg::before,
+.btn-group-lg > .btn-pinterest.btn::before,
+.btn-vk.btn-lg::before,
+.btn-group-lg > .btn-vk.btn::before,
+.btn-yahoo.btn-lg::before,
+.btn-group-lg > .btn-yahoo.btn::before,
+.btn-behance.btn-lg::before,
+.btn-group-lg > .btn-behance.btn::before,
+.btn-dropbox.btn-lg::before,
+.btn-group-lg > .btn-dropbox.btn::before,
+.btn-reddit.btn-lg::before,
+.btn-group-lg > .btn-reddit.btn::before,
+.btn-spotify.btn-lg::before,
+.btn-group-lg > .btn-spotify.btn::before,
+.btn-vine.btn-lg::before,
+.btn-group-lg > .btn-vine.btn::before,
+.btn-foursquare.btn-lg::before,
+.btn-group-lg > .btn-foursquare.btn::before,
+.btn-vimeo.btn-lg::before,
+.btn-group-lg > .btn-vimeo.btn::before {
+    width: 2.875rem;
+    height: 2.875rem;
+    padding: 0.5rem 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.btn-email.btn-lg span, .btn-group-lg > .btn-email.btn span,
+.btn-facebook.btn-lg span, .btn-group-lg > .btn-facebook.btn span,
+.btn-twitter.btn-lg span, .btn-group-lg > .btn-twitter.btn span,
+.btn-linkedin.btn-lg span, .btn-group-lg > .btn-linkedin.btn span,
+.btn-flickr.btn-lg span, .btn-group-lg > .btn-flickr.btn span,
+.btn-tumblr.btn-lg span, .btn-group-lg > .btn-tumblr.btn span,
+.btn-xing.btn-lg span, .btn-group-lg > .btn-xing.btn span,
+.btn-github.btn-lg span, .btn-group-lg > .btn-github.btn span,
+.btn-html5.btn-lg span, .btn-group-lg > .btn-html5.btn span,
+.btn-openid.btn-lg span, .btn-group-lg > .btn-openid.btn span,
+.btn-stack-overflow.btn-lg span, .btn-group-lg > .btn-stack-overflow.btn span,
+.btn-youtube.btn-lg span, .btn-group-lg > .btn-youtube.btn span,
+.btn-css3.btn-lg span, .btn-group-lg > .btn-css3.btn span,
+.btn-dribbble.btn-lg span, .btn-group-lg > .btn-dribbble.btn span,
+.btn-google-plus.btn-lg span, .btn-group-lg > .btn-google-plus.btn span,
+.btn-instagram.btn-lg span, .btn-group-lg > .btn-instagram.btn span,
+.btn-pinterest.btn-lg span, .btn-group-lg > .btn-pinterest.btn span,
+.btn-vk.btn-lg span, .btn-group-lg > .btn-vk.btn span,
+.btn-yahoo.btn-lg span, .btn-group-lg > .btn-yahoo.btn span,
+.btn-behance.btn-lg span, .btn-group-lg > .btn-behance.btn span,
+.btn-dropbox.btn-lg span, .btn-group-lg > .btn-dropbox.btn span,
+.btn-reddit.btn-lg span, .btn-group-lg > .btn-reddit.btn span,
+.btn-spotify.btn-lg span, .btn-group-lg > .btn-spotify.btn span,
+.btn-vine.btn-lg span, .btn-group-lg > .btn-vine.btn span,
+.btn-foursquare.btn-lg span, .btn-group-lg > .btn-foursquare.btn span,
+.btn-vimeo.btn-lg span, .btn-group-lg > .btn-vimeo.btn span {
+    margin-left: 2.875rem;
+}
+
+.btn-facebook.btn-lg.icon, .btn-group-lg > .btn-facebook.icon.btn,
+.btn-email.btn-lg.icon,
+.btn-group-lg > .btn-email.icon.btn,
+.btn-twitter.btn-lg.icon,
+.btn-group-lg > .btn-twitter.icon.btn,
+.btn-linkedin.btn-lg.icon,
+.btn-group-lg > .btn-linkedin.icon.btn,
+.btn-flickr.btn-lg.icon,
+.btn-group-lg > .btn-flickr.icon.btn,
+.btn-tumblr.btn-lg.icon,
+.btn-group-lg > .btn-tumblr.icon.btn,
+.btn-xing.btn-lg.icon,
+.btn-group-lg > .btn-xing.icon.btn,
+.btn-github.btn-lg.icon,
+.btn-group-lg > .btn-github.icon.btn,
+.btn-html5.btn-lg.icon,
+.btn-group-lg > .btn-html5.icon.btn,
+.btn-openid.btn-lg.icon,
+.btn-group-lg > .btn-openid.icon.btn,
+.btn-stack-overflow.btn-lg.icon,
+.btn-group-lg > .btn-stack-overflow.icon.btn,
+.btn-youtube.btn-lg.icon,
+.btn-group-lg > .btn-youtube.icon.btn,
+.btn-css3.btn-lg.icon,
+.btn-group-lg > .btn-css3.icon.btn,
+.btn-dribbble.btn-lg.icon,
+.btn-group-lg > .btn-dribbble.icon.btn,
+.btn-google-plus.btn-lg.icon,
+.btn-group-lg > .btn-google-plus.icon.btn,
+.btn-instagram.btn-lg.icon,
+.btn-group-lg > .btn-instagram.icon.btn,
+.btn-pinterest.btn-lg.icon,
+.btn-group-lg > .btn-pinterest.icon.btn,
+.btn-vk.btn-lg.icon,
+.btn-group-lg > .btn-vk.icon.btn,
+.btn-yahoo.btn-lg.icon,
+.btn-group-lg > .btn-yahoo.icon.btn,
+.btn-behance.btn-lg.icon,
+.btn-group-lg > .btn-behance.icon.btn,
+.btn-dropbox.btn-lg.icon,
+.btn-group-lg > .btn-dropbox.icon.btn,
+.btn-reddit.btn-lg.icon,
+.btn-group-lg > .btn-reddit.icon.btn,
+.btn-spotify.btn-lg.icon,
+.btn-group-lg > .btn-spotify.icon.btn,
+.btn-vine.btn-lg.icon,
+.btn-group-lg > .btn-vine.icon.btn,
+.btn-foursquare.btn-lg.icon,
+.btn-group-lg > .btn-foursquare.icon.btn,
+.btn-vimeo.btn-lg.icon,
+.btn-group-lg > .btn-vimeo.icon.btn {
+    width: 2.875rem;
+    height: 2.875rem;
+}
+
+.btn-facebook.btn-sm, .btn-group-sm > .btn-facebook.btn,
+.btn-email.btn-sm,
+.btn-group-sm > .btn-email.btn,
+.btn-twitter.btn-sm,
+.btn-group-sm > .btn-twitter.btn,
+.btn-linkedin.btn-sm,
+.btn-group-sm > .btn-linkedin.btn,
+.btn-flickr.btn-sm,
+.btn-group-sm > .btn-flickr.btn,
+.btn-tumblr.btn-sm,
+.btn-group-sm > .btn-tumblr.btn,
+.btn-xing.btn-sm,
+.btn-group-sm > .btn-xing.btn,
+.btn-github.btn-sm,
+.btn-group-sm > .btn-github.btn,
+.btn-html5.btn-sm,
+.btn-group-sm > .btn-html5.btn,
+.btn-openid.btn-sm,
+.btn-group-sm > .btn-openid.btn,
+.btn-stack-overflow.btn-sm,
+.btn-group-sm > .btn-stack-overflow.btn,
+.btn-youtube.btn-sm,
+.btn-group-sm > .btn-youtube.btn,
+.btn-css3.btn-sm,
+.btn-group-sm > .btn-css3.btn,
+.btn-dribbble.btn-sm,
+.btn-group-sm > .btn-dribbble.btn,
+.btn-google-plus.btn-sm,
+.btn-group-sm > .btn-google-plus.btn,
+.btn-instagram.btn-sm,
+.btn-group-sm > .btn-instagram.btn,
+.btn-pinterest.btn-sm,
+.btn-group-sm > .btn-pinterest.btn,
+.btn-vk.btn-sm,
+.btn-group-sm > .btn-vk.btn,
+.btn-yahoo.btn-sm,
+.btn-group-sm > .btn-yahoo.btn,
+.btn-behance.btn-sm,
+.btn-group-sm > .btn-behance.btn,
+.btn-dropbox.btn-sm,
+.btn-group-sm > .btn-dropbox.btn,
+.btn-reddit.btn-sm,
+.btn-group-sm > .btn-reddit.btn,
+.btn-spotify.btn-sm,
+.btn-group-sm > .btn-spotify.btn,
+.btn-vine.btn-sm,
+.btn-group-sm > .btn-vine.btn,
+.btn-foursquare.btn-sm,
+.btn-group-sm > .btn-foursquare.btn,
+.btn-vimeo.btn-sm,
+.btn-group-sm > .btn-vimeo.btn {
+    padding: 0.5rem 1rem;
+    font-size: 6rem;
+    line-height: 1.5;
+    border: 0;
+}
+
+.btn-facebook.btn-sm::before, .btn-group-sm > .btn-facebook.btn::before,
+.btn-email.btn-sm::before,
+.btn-group-sm > .btn-email.btn::before,
+.btn-twitter.btn-sm::before,
+.btn-group-sm > .btn-twitter.btn::before,
+.btn-linkedin.btn-sm::before,
+.btn-group-sm > .btn-linkedin.btn::before,
+.btn-flickr.btn-sm::before,
+.btn-group-sm > .btn-flickr.btn::before,
+.btn-tumblr.btn-sm::before,
+.btn-group-sm > .btn-tumblr.btn::before,
+.btn-xing.btn-sm::before,
+.btn-group-sm > .btn-xing.btn::before,
+.btn-github.btn-sm::before,
+.btn-group-sm > .btn-github.btn::before,
+.btn-html5.btn-sm::before,
+.btn-group-sm > .btn-html5.btn::before,
+.btn-openid.btn-sm::before,
+.btn-group-sm > .btn-openid.btn::before,
+.btn-stack-overflow.btn-sm::before,
+.btn-group-sm > .btn-stack-overflow.btn::before,
+.btn-youtube.btn-sm::before,
+.btn-group-sm > .btn-youtube.btn::before,
+.btn-css3.btn-sm::before,
+.btn-group-sm > .btn-css3.btn::before,
+.btn-dribbble.btn-sm::before,
+.btn-group-sm > .btn-dribbble.btn::before,
+.btn-google-plus.btn-sm::before,
+.btn-group-sm > .btn-google-plus.btn::before,
+.btn-instagram.btn-sm::before,
+.btn-group-sm > .btn-instagram.btn::before,
+.btn-pinterest.btn-sm::before,
+.btn-group-sm > .btn-pinterest.btn::before,
+.btn-vk.btn-sm::before,
+.btn-group-sm > .btn-vk.btn::before,
+.btn-yahoo.btn-sm::before,
+.btn-group-sm > .btn-yahoo.btn::before,
+.btn-behance.btn-sm::before,
+.btn-group-sm > .btn-behance.btn::before,
+.btn-dropbox.btn-sm::before,
+.btn-group-sm > .btn-dropbox.btn::before,
+.btn-reddit.btn-sm::before,
+.btn-group-sm > .btn-reddit.btn::before,
+.btn-spotify.btn-sm::before,
+.btn-group-sm > .btn-spotify.btn::before,
+.btn-vine.btn-sm::before,
+.btn-group-sm > .btn-vine.btn::before,
+.btn-foursquare.btn-sm::before,
+.btn-group-sm > .btn-foursquare.btn::before,
+.btn-vimeo.btn-sm::before,
+.btn-group-sm > .btn-vimeo.btn::before {
+    width: 1.8125rem;
+    height: 1.8125rem;
+    padding: 0.25rem 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.btn-facebook.btn-sm span, .btn-group-sm > .btn-facebook.btn span,
+.btn-email.btn-sm span, .btn-group-sm > .btn-email.btn span,
+.btn-twitter.btn-sm span, .btn-group-sm > .btn-twitter.btn span,
+.btn-linkedin.btn-sm span, .btn-group-sm > .btn-linkedin.btn span,
+.btn-flickr.btn-sm span, .btn-group-sm > .btn-flickr.btn span,
+.btn-tumblr.btn-sm span, .btn-group-sm > .btn-tumblr.btn span,
+.btn-xing.btn-sm span, .btn-group-sm > .btn-xing.btn span,
+.btn-github.btn-sm span, .btn-group-sm > .btn-github.btn span,
+.btn-html5.btn-sm span, .btn-group-sm > .btn-html5.btn span,
+.btn-openid.btn-sm span, .btn-group-sm > .btn-openid.btn span,
+.btn-stack-overflow.btn-sm span, .btn-group-sm > .btn-stack-overflow.btn span,
+.btn-youtube.btn-sm span, .btn-group-sm > .btn-youtube.btn span,
+.btn-css3.btn-sm span, .btn-group-sm > .btn-css3.btn span,
+.btn-dribbble.btn-sm span, .btn-group-sm > .btn-dribbble.btn span,
+.btn-google-plus.btn-sm span, .btn-group-sm > .btn-google-plus.btn span,
+.btn-instagram.btn-sm span, .btn-group-sm > .btn-instagram.btn span,
+.btn-pinterest.btn-sm span, .btn-group-sm > .btn-pinterest.btn span,
+.btn-vk.btn-sm span, .btn-group-sm > .btn-vk.btn span,
+.btn-yahoo.btn-sm span, .btn-group-sm > .btn-yahoo.btn span,
+.btn-behance.btn-sm span, .btn-group-sm > .btn-behance.btn span,
+.btn-dropbox.btn-sm span, .btn-group-sm > .btn-dropbox.btn span,
+.btn-reddit.btn-sm span, .btn-group-sm > .btn-reddit.btn span,
+.btn-spotify.btn-sm span, .btn-group-sm > .btn-spotify.btn span,
+.btn-vine.btn-sm span, .btn-group-sm > .btn-vine.btn span,
+.btn-foursquare.btn-sm span, .btn-group-sm > .btn-foursquare.btn span,
+.btn-vimeo.btn-sm span, .btn-group-sm > .btn-vimeo.btn span {
+    margin-left: 1.8125rem;
+}
+
+.btn-facebook.btn-sm.icon, .btn-group-sm > .btn-facebook.icon.btn,
+.btn-email.btn-sm.icon,
+.btn-group-sm > .btn-email.icon.btn,
+.btn-twitter.btn-sm.icon,
+.btn-group-sm > .btn-twitter.icon.btn,
+.btn-linkedin.btn-sm.icon,
+.btn-group-sm > .btn-linkedin.icon.btn,
+.btn-flickr.btn-sm.icon,
+.btn-group-sm > .btn-flickr.icon.btn,
+.btn-tumblr.btn-sm.icon,
+.btn-group-sm > .btn-tumblr.icon.btn,
+.btn-xing.btn-sm.icon,
+.btn-group-sm > .btn-xing.icon.btn,
+.btn-github.btn-sm.icon,
+.btn-group-sm > .btn-github.icon.btn,
+.btn-html5.btn-sm.icon,
+.btn-group-sm > .btn-html5.icon.btn,
+.btn-openid.btn-sm.icon,
+.btn-group-sm > .btn-openid.icon.btn,
+.btn-stack-overflow.btn-sm.icon,
+.btn-group-sm > .btn-stack-overflow.icon.btn,
+.btn-youtube.btn-sm.icon,
+.btn-group-sm > .btn-youtube.icon.btn,
+.btn-css3.btn-sm.icon,
+.btn-group-sm > .btn-css3.icon.btn,
+.btn-dribbble.btn-sm.icon,
+.btn-group-sm > .btn-dribbble.icon.btn,
+.btn-google-plus.btn-sm.icon,
+.btn-group-sm > .btn-google-plus.icon.btn,
+.btn-instagram.btn-sm.icon,
+.btn-group-sm > .btn-instagram.icon.btn,
+.btn-pinterest.btn-sm.icon,
+.btn-group-sm > .btn-pinterest.icon.btn,
+.btn-vk.btn-sm.icon,
+.btn-group-sm > .btn-vk.icon.btn,
+.btn-yahoo.btn-sm.icon,
+.btn-group-sm > .btn-yahoo.icon.btn,
+.btn-behance.btn-sm.icon,
+.btn-group-sm > .btn-behance.icon.btn,
+.btn-dropbox.btn-sm.icon,
+.btn-group-sm > .btn-dropbox.icon.btn,
+.btn-reddit.btn-sm.icon,
+.btn-group-sm > .btn-reddit.icon.btn,
+.btn-spotify.btn-sm.icon,
+.btn-group-sm > .btn-spotify.icon.btn,
+.btn-vine.btn-sm.icon,
+.btn-group-sm > .btn-vine.icon.btn,
+.btn-foursquare.btn-sm.icon,
+.btn-group-sm > .btn-foursquare.icon.btn,
+.btn-vimeo.btn-sm.icon,
+.btn-group-sm > .btn-vimeo.icon.btn {
+    width: 1.8125rem;
+    height: 1.8125rem;
+}
+
+.btn-email {
+    background: #3b5998;
+}
+
+.btn-email::before {
+    content: "\f09a";
+    background: #344e86;
+}
+
+.btn-email:hover {
+    background: #344e86;
+}
+
+.btn-email:hover::before {
+    background: #2d4373;
+}
+
+.btn-facebook {
+    background: #3b5998;
+}
+
+.btn-facebook::before {
+    content: "\f09a";
+    background: #344e86;
+}
+
+.btn-facebook:hover {
+    background: #344e86;
+}
+
+.btn-facebook:hover::before {
+    background: #2d4373;
+}
+
+.btn-twitter {
+    background: #00aced;
+}
+
+.btn-twitter::before {
+    content: "\f099";
+    background: #0099d4;
+}
+
+.btn-twitter:hover {
+    background: #0099d4;
+}
+
+.btn-twitter:hover::before {
+    background: #0087ba;
+}
+
+.btn-linkedin {
+    background: #4875b4;
+}
+
+.btn-linkedin::before {
+    content: "\f0e1";
+    background: #4169a2;
+}
+
+.btn-linkedin:hover {
+    background: #4169a2;
+}
+
+.btn-linkedin:hover::before {
+    background: #395d90;
+}
+
+.btn-flickr {
+    background: #ff0084;
+}
+
+.btn-flickr::before {
+    content: "\f16e";
+    background: #e60077;
+}
+
+.btn-flickr:hover {
+    background: #e60077;
+}
+
+.btn-flickr:hover::before {
+    background: #cc006a;
+}
+
+.btn-tumblr {
+    background: #32506d;
+}
+
+.btn-tumblr::before {
+    content: "\f173";
+    background: #2a435c;
+}
+
+.btn-tumblr:hover {
+    background: #2a435c;
+}
+
+.btn-tumblr:hover::before {
+    background: #22364a;
+}
+
+.btn-xing {
+    background: #026466;
+}
+
+.btn-xing::before {
+    content: "\f168";
+    background: #024b4d;
+}
+
+.btn-xing:hover {
+    background: #024b4d;
+}
+
+.btn-xing:hover::before {
+    background: #013334;
+}
+
+.btn-github {
+    background: #4183c4;
+}
+
+.btn-github::before {
+    content: "\f09b";
+    background: #3876b4;
+}
+
+.btn-github:hover {
+    background: #3876b4;
+}
+
+.btn-github:hover::before {
+    background: #3269a0;
+}
+
+.btn-html5 {
+    background: #e34f26;
+}
+
+.btn-html5::before {
+    content: "\f13b";
+    background: #d4431b;
+}
+
+.btn-html5:hover {
+    background: #d4431b;
+}
+
+.btn-html5:hover::before {
+    background: #be3c18;
+}
+
+.btn-openid {
+    background: #f78c40;
+}
+
+.btn-openid::before {
+    content: "\f19b";
+    background: #f67d28;
+}
+
+.btn-openid:hover {
+    background: #f67d28;
+}
+
+.btn-openid:hover::before {
+    background: #f56f0f;
+}
+
+.btn-stack-overflow {
+    background: #fe7a15;
+}
+
+.btn-stack-overflow::before {
+    content: "\f16c";
+    background: #f86c01;
+}
+
+.btn-stack-overflow:hover {
+    background: #f86c01;
+}
+
+.btn-stack-overflow:hover::before {
+    background: #df6101;
+}
+
+.btn-css3 {
+    background: #0170ba;
+}
+
+.btn-css3::before {
+    content: "\f13c";
+    background: #0161a1;
+}
+
+.btn-css3:hover {
+    background: #0161a1;
+}
+
+.btn-css3:hover::before {
+    background: #015187;
+}
+
+.btn-youtube {
+    background: #b00;
+}
+
+.btn-youtube::before {
+    content: "\f167";
+    background: #a20000;
+}
+
+.btn-youtube:hover {
+    background: #a20000;
+}
+
+.btn-youtube:hover::before {
+    background: #880000;
+}
+
+.btn-dribbble {
+    background: #ea4c89;
+}
+
+.btn-dribbble::before {
+    content: "\f17d";
+    background: #e7357a;
+}
+
+.btn-dribbble:hover {
+    background: #e7357a;
+}
+
+.btn-dribbble:hover::before {
+    background: #e51e6b;
+}
+
+.btn-google-plus {
+    background: #bb4b39;
+}
+
+.btn-google-plus::before {
+    content: "\f0d5";
+    background: #a74333;
+}
+
+.btn-google-plus:hover {
+    background: #a74333;
+}
+
+.btn-google-plus:hover::before {
+    background: #943b2d;
+}
+
+.btn-instagram {
+    background: #517fa4;
+}
+
+.btn-instagram::before {
+    content: "\f16d";
+    background: #497293;
+}
+
+.btn-instagram:hover {
+    background: #497293;
+}
+
+.btn-instagram:hover::before {
+    background: #406582;
+}
+
+.btn-pinterest {
+    background: #cb2027;
+}
+
+.btn-pinterest::before {
+    content: "\f0d2";
+    background: #b51d23;
+}
+
+.btn-pinterest:hover {
+    background: #b51d23;
+}
+
+.btn-pinterest:hover::before {
+    background: #9f191f;
+}
+
+.btn-vk {
+    background: #45668e;
+}
+
+.btn-vk::before {
+    content: "\f189";
+    background: #3d5a7d;
+}
+
+.btn-vk:hover {
+    background: #3d5a7d;
+}
+
+.btn-vk:hover::before {
+    background: #344d6c;
+}
+
+.btn-yahoo {
+    background: #400191;
+}
+
+.btn-yahoo::before {
+    content: "\f19e";
+    background: #350178;
+}
+
+.btn-yahoo:hover {
+    background: #350178;
+}
+
+.btn-yahoo:hover::before {
+    background: #2a015e;
+}
+
+.btn-behance {
+    background: #1769ff;
+}
+
+.btn-behance::before {
+    content: "\f1b4";
+    background: #0059fd;
+}
+
+.btn-behance:hover {
+    background: #0059fd;
+}
+
+.btn-behance:hover::before {
+    background: #0050e3;
+}
+
+.btn-dropbox {
+    background: #007ee5;
+}
+
+.btn-dropbox::before {
+    content: "\f16b";
+    background: #0070cc;
+}
+
+.btn-dropbox:hover {
+    background: #0070cc;
+}
+
+.btn-dropbox:hover::before {
+    background: #0062b2;
+}
+
+.btn-reddit {
+    background: #ff4500;
+}
+
+.btn-reddit::before {
+    content: "\f1a1";
+    background: #e63e00;
+}
+
+.btn-reddit:hover {
+    background: #e63e00;
+}
+
+.btn-reddit:hover::before {
+    background: #cc3700;
+}
+
+.btn-spotify {
+    background: #7ab800;
+}
+
+.btn-spotify::before {
+    content: "\f1bc";
+    background: #699f00;
+}
+
+.btn-spotify:hover {
+    background: #699f00;
+}
+
+.btn-spotify:hover::before {
+    background: #588500;
+}
+
+.btn-vine {
+    background: #00bf8f;
+}
+
+.btn-vine::before {
+    content: "\f1ca";
+    background: #00a67c;
+}
+
+.btn-vine:hover {
+    background: #00a67c;
+}
+
+.btn-vine:hover::before {
+    background: #008c69;
+}
+
+.btn-foursquare {
+    background: #1073af;
+}
+
+.btn-foursquare::before {
+    content: "\f180";
+    background: #0e6498;
+}
+
+.btn-foursquare:hover {
+    background: #0e6498;
+}
+
+.btn-foursquare:hover::before {
+    background: #0c5480;
+}
+
+.btn-vimeo {
+    background: #aad450;
+}
+
+.btn-vimeo::before {
+    content: "\f194";
+    background: #a0cf3c;
+}
+
+.btn-vimeo:hover {
+    background: #a0cf3c;
+}
+
+.btn-vimeo:hover::before {
+    background: #93c130;
+}
+
+.background-full-opacity {
+    background: #385463 !important;
+    opacity: 100% !important;
+}

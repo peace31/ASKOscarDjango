@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "extends": "jquery",
+  "parserOptions": {
+	"ecmaVersion": 5
+  },
+  "env": {
+	"node": true
+  }
+}

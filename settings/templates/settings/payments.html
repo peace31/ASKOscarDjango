@@ -1,0 +1,28 @@
+{% extends 'taskoftheday/base.html' %}
+{% block title %}Payments | Account{% endblock %}
+{% block menu_taskoftheday_active %}nav-item{% endblock %}
+{% block menu_progress_active %}nav-item{% endblock %}
+{% block menu_analytics_active %}nav-item{% endblock %}
+{% block menu_goals_active %}nav-item{% endblock %}
+{% block settings_page_no_padding %}no-padding{% endblock %}
+
+
+{% block body %}
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link" href="/settings/profile/" role="tab">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/settings/" role="tab">Settings</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="/settings/payments/" role="tab">Payments</a>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="Payments" role="tabpanel">Content here</div>
+</div>
+{% endblock %}

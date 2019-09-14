@@ -1,0 +1,14 @@
+{
+  "installed": {
+    "client_id": "1071534795399-9q9urdlq845cu060e7isa56usjsdnu3o.apps.googleusercontent.com",
+    "project_id": "big-lamp-177908",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "acKPO8mB9yM_yEW2hN80Dr_x",
+    "redirect_uris": [
+      "urn:ietf:wg:oauth:2.0:oob",
+      "http://localhost"
+    ]
+  }
+}

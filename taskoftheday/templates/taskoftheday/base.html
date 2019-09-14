@@ -1,0 +1,554 @@
+<!--
+* CoreUI - Open Source Bootstrap Admin Template
+* @version v1.0.0-alpha.6
+* @link http://coreui.io
+* Copyright (c) 2017 creativeLabs Łukasz Holeczek
+* @license MIT
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"
+        integrity="sha256-SiHXR50l06UwJvHhFY4e5vzwq75vEHH+8fFNpkXePr0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"
+        integrity="sha256-EPrkNjGEmCWyazb3A/Epj+W7Qm2pB9vnfXw+X6LImPM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+{% load static from staticfiles %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword"
+          content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
+    <link rel="shortcut icon" href="{% static 'taskoftheday/img/favicon.png' %}">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+          integrity="sha256-7O1DfUu4pybYI7uAATw34eDrgQaWGOfMV/8erfDQz/Q=" crossorigin="anonymous"/>
+
+
+    <!-- Main styles for this application -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Icons -->
+    <link href="{% static 'taskoftheday/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'taskoftheday/scss/style.scss' %}" rel="stylesheet">
+
+
+    <link href="{% static 'taskoftheday/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'taskoftheday/css/simple-line-icons.css' %}" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="{% static 'taskoftheday/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'taskoftheday/css/custom.css' %}" rel="stylesheet">
+
+</head>
+
+<!-- BODY options, add following classes to body to change options
+
+// Header options
+1. '.header-fixed'					- Fixed Header
+
+// Sidebar options
+1. '.sidebar-fixed'					- Fixed Sidebar
+2. '.sidebar-hidden'				- Hidden Sidebar
+3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+5. '.sidebar-compact'			  - Compact Sidebar
+
+// Aside options
+1. '.aside-menu-fixed'			- Fixed Aside Menu
+2. '.aside-menu-hidden'			- Hidden Aside Menu
+3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+// Footer options
+1. '.footer-fixed'						- Fixed footer
+
+-->
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+<header class="app-header navbar">
+    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
+    <a class="navbar-brand" href="#"></a>
+    <ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item">
+            <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
+        </li>
+
+        <li class="nav-item px-3">
+            <a class="nav-link" href="https://www.facebook.com/AskOskarOfficial">Get help</a>
+        </li>
+
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item d-md-down-none">
+            <a class="nav-link" href="#"><i class="icon-bell"></i><span
+                    class="badge badge-pill badge-danger">5</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link rightspace" data-toggle="dropdown" href="#" role="button"
+               aria-haspopup="true" aria-expanded="false">
+                <img src="{% static 'taskoftheday/img/avatars/6.jpg' %}" class="img-avatar"
+                     alt="admin@bootstrapmaster.com">
+                <span class="d-md-down-none">My account</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+
+                <div class="dropdown-header text-center">
+                    <strong>Account</strong>
+                </div>
+
+                <a class="dropdown-item" href="/settings/profile/"><i class="fa fa-user"></i> Profile</a>
+                <a class="dropdown-item" href="/settings/"><i class="fa fa-wrench"></i> Settings</a>
+                <a class="dropdown-item" href="/settings/payments/"><i class="fa fa-usd"></i> Payment<span
+                        class="badge badge-default"></span></a>
+                <div class="divider"></div>
+                <a class="dropdown-item" href="/logout/"><i class="fa fa-lock"></i> Logout</a>
+            </div>
+        </li>
+    </ul>
+</header>
+
+<div class="app-body">
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <li class="{% block menu_taskoftheday_active %}{% endblock %}">
+                    <a class="nav-link" href="/taskoftheday/start"><i class="icon-speedometer"></i> Task of the day</a>
+                </li>
+                <li class="{% block menu_progress_active %}{% endblock %}">
+                    <a class="nav-link" href="/progress/"><i class="icon-speedometer"></i> Progress</a>
+                </li>
+                <li class="{% block menu_analytics_active %}{% endblock %}">
+                    <a class="nav-link" href="/analytics/"><i class="icon-speedometer"></i> Analytics &amp; Goals</a>
+                </li>
+                {% comment %}
+                <li class="{% block menu_goals_active %}{% endblock %}">
+                    <a class="nav-link" href="/goals/"><i class="icon-speedometer"></i> Goals</a>
+                </li>
+                {% endcomment %}
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="1000"
+                         aria-valuemin="0" aria-valuemax="2000"></div>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <main class="main">
+        {% block body %}
+        {% endblock %}
+    </main>
+
+    <aside class="aside-menu">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab"><i class="icon-list"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#messages" role="tab"><i class="icon-speech"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#settings" role="tab"><i class="icon-settings"></i></a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="timeline" role="tabpanel">
+                <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+                    <small><b>Today</b>
+                    </small>
+                </div>
+                <hr class="transparent mx-3 my-0">
+                <div class="callout callout-warning m-0 py-3">
+                    <div class="avatar float-right">
+                        <img src="{% static 'taskoftheday/img/avatars/7.jpg' %}" class="img-avatar"
+                             alt="admin@bootstrapmaster.com">
+                    </div>
+                    <div>Meeting with
+                        <strong>Lucas</strong>
+                    </div>
+                    <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+                    <small class="text-muted"><i class="icon-location-pin"></i>&nbsp; Palo Alto, CA</small>
+                </div>
+                <hr class="mx-3 my-0">
+                <div class="callout callout-info m-0 py-3">
+                    <div class="avatar float-right">
+                        <img src="{% static 'taskoftheday/img/avatars/4.jpg' %}" class="img-avatar"
+                             alt="admin@bootstrapmaster.com">
+                    </div>
+                    <div>Skype with
+                        <strong>Megan</strong>
+                    </div>
+                    <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 4 - 5pm</small>
+                    <small class="text-muted"><i class="icon-social-skype"></i>&nbsp; On-line</small>
+                </div>
+                <hr class="transparent mx-3 my-0">
+                <div class="callout m-0 py-2 text-muted text-center bg-faded text-uppercase">
+                    <small><b>Tomorrow</b>
+                    </small>
+                </div>
+                <hr class="transparent mx-3 my-0">
+                <div class="callout callout-danger m-0 py-3">
+                    <div>New UI Project -
+                        <strong>deadline</strong>
+                    </div>
+                    <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 10 - 11pm</small>
+                    <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
+                    <div class="avatars-stack mt-2">
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/2.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/3.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/4.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/5.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/6.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                    </div>
+                </div>
+                <hr class="mx-3 my-0">
+                <div class="callout callout-success m-0 py-3">
+                    <div>
+                        <strong>#10 Startups.Garden</strong>Meetup
+                    </div>
+                    <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+                    <small class="text-muted"><i class="icon-location-pin"></i>&nbsp; Palo Alto, CA</small>
+                </div>
+                <hr class="mx-3 my-0">
+                <div class="callout callout-primary m-0 py-3">
+                    <div>
+                        <strong>Team meeting</strong>
+                    </div>
+                    <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 4 - 6pm</small>
+                    <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
+                    <div class="avatars-stack mt-2">
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/2.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/3.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/4.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/5.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/6.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/7.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="{% static 'taskoftheday/img/avatars/8.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                        </div>
+                    </div>
+                </div>
+                <hr class="mx-3 my-0">
+            </div>
+            <div class="tab-pane p-3" id="messages" role="tabpanel">
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="avatar">
+                            <img src="{% static 'taskoftheday/img/avatars/7.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                            <span class="avatar-status badge-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small>
+                        <small class="text-muted float-right mt-1">1:52 PM</small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt...
+                    </small>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="avatar">
+                            <img src="{% static 'taskoftheday/img/avatars/7.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                            <span class="avatar-status badge-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small>
+                        <small class="text-muted float-right mt-1">1:52 PM</small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt...
+                    </small>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="avatar">
+                            <img src="{% static 'taskoftheday/img/avatars/7.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                            <span class="avatar-status badge-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small>
+                        <small class="text-muted float-right mt-1">1:52 PM</small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt...
+                    </small>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="avatar">
+                            <img src="{% static 'taskoftheday/img/avatars/7.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                            <span class="avatar-status badge-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small>
+                        <small class="text-muted float-right mt-1">1:52 PM</small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt...
+                    </small>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="py-3 pb-5 mr-3 float-left">
+                        <div class="avatar">
+                            <img src="{% static 'taskoftheday/img/avatars/7.jpg' %}" class="img-avatar"
+                                 alt="admin@bootstrapmaster.com">
+                            <span class="avatar-status badge-success"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lukasz Holeczek</small>
+                        <small class="text-muted float-right mt-1">1:52 PM</small>
+                    </div>
+                    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt...
+                    </small>
+                </div>
+            </div>
+            <div class="tab-pane p-3" id="settings" role="tabpanel">
+                <h6>Settings</h6>
+
+                <div class="aside-options">
+                    <div class="clearfix mt-4">
+                        <small><b>Option 1</b>
+                        </small>
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                            <input type="checkbox" class="switch-input" checked="">
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="aside-options">
+                    <div class="clearfix mt-3">
+                        <small><b>Option 2</b>
+                        </small>
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                            <input type="checkbox" class="switch-input">
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="aside-options">
+                    <div class="clearfix mt-3">
+                        <small><b>Option 3</b>
+                        </small>
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                            <input type="checkbox" class="switch-input">
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="aside-options">
+                    <div class="clearfix mt-3">
+                        <small><b>Option 4</b>
+                        </small>
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+                            <input type="checkbox" class="switch-input" checked="">
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <hr>
+                <h6>System Utilization</h6>
+
+                <div class="text-uppercase mb-1 mt-4">
+                    <small><b>CPU Usage</b>
+                    </small>
+                </div>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small class="text-muted">348 Processes. 1/4 Cores.</small>
+
+                <div class="text-uppercase mb-1 mt-2">
+                    <small><b>Memory Usage</b>
+                    </small>
+                </div>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small class="text-muted">11444GB/16384MB</small>
+
+                <div class="text-uppercase mb-1 mt-2">
+                    <small><b>SSD 1 Usage</b>
+                    </small>
+                </div>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small class="text-muted">243GB/256GB</small>
+
+                <div class="text-uppercase mb-1 mt-2">
+                    <small><b>SSD 2 Usage</b>
+                    </small>
+                </div>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <small class="text-muted">25GB/256GB</small>
+            </div>
+        </div>
+    </aside>
+
+
+</div>
+
+<!-- Bootstrap and necessary plugins -->
+<script src="{% static 'taskoftheday/bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'taskoftheday/bower_components/tether/dist/js/tether.min.js' %}"></script>
+<script src="{% static 'taskoftheday/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'taskoftheday/bower_components/pace/pace.min.js' %}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"
+        integrity="sha256-SiHXR50l06UwJvHhFY4e5vzwq75vEHH+8fFNpkXePr0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"
+        integrity="sha256-EPrkNjGEmCWyazb3A/Epj+W7Qm2pB9vnfXw+X6LImPM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+
+
+<!-- Plugins and scripts required by all views -->
+<script src="{% static 'taskoftheday/bower_components/chart.js/dist/Chart.min.js' %}"></script>
+<script src="{% static 'taskoftheday/js/views/chart-analytics.js' %}"></script>
+<script src="{% static 'taskoftheday/js/views/chart-progress.js' %}"></script>
+<script src="{% static 'taskoftheday/js/views/chart-sidebar.js' %}"></script>
+<script src="{% static 'taskoftheday/js/custom.js' %}"></script>
+
+<!-- GenesisUI main scripts -->
+
+<script src="{% static 'taskoftheday/js/app.js' %}"></script>
+
+<script>
+    (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () {
+            (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {hjid: 591646, hjsv: 5};
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-104526078-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+</body>
+
+</html>

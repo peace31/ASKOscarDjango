@@ -1,0 +1,117 @@
+{% extends 'taskoftheday/base.html' %}
+{% block title %}Task of the day{% endblock %}
+{% block menu_taskoftheday_active %}active{% endblock %}
+{% block menu_progress_active %}nav-item{% endblock %}
+{% block menu_analytics_active %}nav-item{% endblock %}
+{% block menu_goals_active %}nav-item{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+
+    <div class="animated fadeIn">
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+                <div class="row">
+                    <div class="col-md-12 center">
+                        <div class="big-text1-grey">Task of the day</div>
+                        <div class="big-text2-green font-weight-bold">{{ guide.guide_category }}</div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+
+                        <div class="card-nobackground">
+                            <div class="card-block">
+                                <div class="big-text2-blue text-uppercase font-weight-bold center">Why improve<br/>your
+                                    {{ guide.guide_category }}
+                                </div>
+                                <hr class="divider">
+                                <div class="small-text1-grey" style="width: 60%;margin:0 auto;">
+                                    <div class="tab-panel">{{ guide.why }}{{ profile.current_conversion_rate }}%.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="card-nobackground">
+                            <div class="card-block">
+                                <div class="big-text2-blue text-uppercase font-weight-bold center">How will it<br/>impact
+                                    your store
+                                </div>
+                                <hr class="divider">
+                                <div class="small-text1-grey" style="width: 60%;margin:0 auto;">
+                                    <div class="tab-panel">If you reach {{ profile.current_conversion_rate }}% with your
+                                        current {{ guide.user_monthly_visitors }} monthly visitors, you will increase
+                                        your net profit by {{ user_increase_conversion_rate }} $.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+
+                    <div class="card card-inverse card-primary">
+                        <div class="card-block">
+                            <div class="big-text2 text-uppercase font-weight-bold center">Current</div>
+                            <div class="big-text3 text-uppercase text-muted font-weight-bold center">{{
+                                guide.guide_category }}
+                            </div>
+                            <div class="h1 text-muted text-right mb-4">
+                            </div>
+                            <div class="big-text1 mb-0 font-weight-bold center">{{ guide.user_current_conversion_rate
+                                }}%
+                            </div>
+                            <div class="progress progress-white progress-xs mt-3">
+                                <div class="progress-bar" role="progressbar"
+                                     style="width: {{ guide.user_current_conversion_rate }}%"
+                                     aria-valuenow="{{ user_current_conversion_rate }}" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="card card-inverse card-success">
+                        <div class="card-block">
+                            <div class="big-text2 text-uppercase font-weight-bold center">Optimal</div>
+                            <div class="big-text3 text-uppercase text-muted font-weight-bold center">{{
+                                guide.guide_category }}
+                            </div>
+                            <div class="h1 text-muted text-right mb-4">
+                            </div>
+                            <div class="big-text1 mb-0 font-weight-bold center ">{{ guide.user_optimal_conversion_rate
+                                }} %
+                            </div>
+                            <div class="progress progress-white progress-xs mt-3">
+                                <div class="progress-bar" role="progressbar"
+                                     style="width: {{ guide.user_optimal_conversion_rate}}%"
+                                     aria-valuenow="{{ user_optimal_conversion_rate}}" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <form class="col-md-12 text-center" action="" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="sb_start" value="{{ guide.id }}"/>
+                    <button type="submit" class="btn btn-primary btn-lg">Start the task!</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    {% endblock %}
+
+

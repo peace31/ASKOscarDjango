@@ -1,0 +1,133 @@
+{% extends 'taskoftheday/base.html' %}
+{% block title %}Task of the day{% endblock %}
+{% block menu_taskoftheday_active %}active{% endblock %}
+{% block menu_progress_active %}nav-item{% endblock %}
+{% block menu_analytics_active %}nav-item{% endblock %}
+{% block menu_goals_active %}nav-item{% endblock %}
+
+{% block body %}
+<!--
+<div class="container-fluid">
+    <div class="animated fadeIn">
+
+            <div class="container-fluid">
+                <div class="animated fadeIn">  -->
+<div class="row">
+    <div class="steps">
+        {% for s in steps %}
+        <div {% if s.sequence_number== step_id %} class="focus" {% elif usertasks.step.sequence_number== step_id %}
+             class="done" {% else %} class="undone" {% endif %}>
+            {% if s.sequence_number != 1 %}
+            <div class="separator" style="border: 2px solid #72BDD4;"></div>
+            {% endif %}
+            <div class="circle">
+                <a href="/taskoftheday/{{guide_id}}/{{ s.sequence_number }}/1/">{{s.sequence_number}}</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- <div class="done">
+    <div class="circle">
+        1
+    </div>
+    <div class="separator"></div>
+</div>
+<div class="focus">
+    <div class="circle">
+        2
+    </div>
+</div>
+<div class="undone">
+    <div class="separator"></div>
+    <div class="circle">
+        3
+    </div>
+</div> -->
+<div class="row" style="margin-left: 5px;">
+    <div class="col-sm-6 text-center">
+        <img class="img-fluid" src='/{{ task.task_img | slice:"12:" }}'/>
+    </div>
+    <div class="col-sm-6">
+        <div class="card-nobackground">
+            <div class="card-block">
+                <div class="big-text2-blue text-uppercase font-weight-bold center">Description</div>
+                <div class="divider"></div>
+                <div class="small-text1-grey" style="width: 60%;margin:0 auto;">
+                    <div class="tab-panel">{{task.task_description}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="card-nobackground">
+            <div class="card-block">
+                <div class="big-text2-blue text-uppercase font-weight-bold center">Task</div>
+                <div class="divider"></div>
+                {% for task in tasks %}
+                <form method="post" action="/taskoftheday/{{guide_id}}/{{ step_id }}/{{task}}/">
+                    <ul class="lispaces">
+
+                        <li>
+                        <span class="button-checkbox">
+                            <button type="submit" name="buttoncheck" class="btn" data-color="primary" {% if
+                                    task.sequence_number|floatformat !=previous_task|floatformat %}disabled{% endif
+                                    %}></button>
+                            <input type="checkbox" class="hidden" name="buttoncheck" {% if
+                                   task.sequence_number|floatformat <= current_task|floatformat %}checked="checked"{% endif %} />
+                            <!--{{task.sequence_number|floatformat }},{{current_task|floatformat}} -->
+
+                        </span>
+
+                            <input type="hidden" name="guide_id" value="{{ guide_id }}"/>
+                            <input type="hidden" name="step_id" value="{{ step_id }}"/>
+                            <input type="hidden" name="task_id" value="{{ task }}"/>
+
+                            <button type="submit" class="btn btn-primary">
+                                {{task.task_task}}<span class="eyeicon glyphicon glyphicon-eye-open"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </form>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <form method="post">
+            <input type="hidden" name="next" value="{{ next }}"/>
+
+            <input type="hidden" name="guide_id" value="{{ guide_id }}"/>
+            <input type="hidden" name="step_id" value="{{ step_id }}"/>
+            <input type="hidden" name="task_id" value="{{ task_id }}"/>
+
+            <!-- a href="{{ next }}" type="button" class="btn btn-primary btn-lg">Next step</a -->
+            <input type="submit" name="nextstep" value="Next step" class="btn btn-primary btn-lg"/>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="steps2">
+        {% for s in tasks %}
+        <div {% if s.sequence_number== task_id %} class="focus" {% elif usertasks.task.sequence_number== task_id %}
+             class="done" {% else %} class="undone" {% endif %}>
+            {% if s.sequence_number != 1 %}
+            <div class="separator" style="border: 2px solid #72BDD4;"></div>
+            {% endif %}
+            <div class="circle"
+                 step-task-id="task-id=" {{guide_id}}-{{ step_id }}
+            "
+            task-id="{{guide_id}}-{{ step_id }}-{{s.sequence_number}}">
+            <a href="/taskoftheday/{{guide_id}}/{{ step_id }}/{{s.sequence_number}}/">{{s.sequence_number}}</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

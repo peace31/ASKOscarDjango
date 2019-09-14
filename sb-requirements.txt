@@ -1,0 +1,3 @@
+django_summernote
+django-pinax-referral
+django-crontab
